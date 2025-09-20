@@ -55,7 +55,7 @@ main();
 
 ```javascript
 const segmenter = new ThaiSyllableSegmenter();
-await segmenter.loadModel('./models/thai_syllable_model.json');
+await segmenter.loadModel('./models/thai_model_simple.json');
 
 const syllables = segmenter.segment("มหาวิทยาลัย");
 console.log(syllables); // ["มหา", "วิท", "ยา", "ลัย"]
@@ -242,12 +242,15 @@ Contributions are welcome! Areas for improvement:
 
 MIT License - see LICENSE file for details
 
-## 🙏 Acknowledgments
+### Special Thanks
 
-- Thai language linguistics research
-- CRF algorithm implementations
-- Thai NLP community
-- Unicode Thai text processing standards
+**Dataset**: This project uses training data derived from the **Han-solo** dataset by PyThaiNLP, a comprehensive collection of Thai syllable-segmented text from social media and web sources.
+
+- **Han-solo Repository**: https://github.com/PyThaiNLP/Han-solo
+
+The Han-solo dataset provides real-world Thai text with manual syllable segmentation, making it an invaluable resource for training and evaluating Thai NLP models. Our implementation converts and utilizes this data to train the Conditional Random Fields model for accurate syllable boundary detection.
+
+**Data Processing**: The original pipe-delimited format (`ซื้อ|ที่|ไหน|ครับ`) from Han-solo has been converted to JSON format for use with our CRF training pipeline, maintaining the high-quality manual segmentation while making it compatible with modern JavaScript machine learning workflows.
 
 ---
 

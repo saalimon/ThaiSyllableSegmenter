@@ -10,7 +10,7 @@
     "README.md",
     "TUTORIAL.md",
     "LICENSE",
-    "examples/training_data.json"
+    "models/thai_model_simple.json"
   ],
   "scripts": {
     "start": "node src/index.js",
