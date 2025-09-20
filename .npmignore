@@ -1,0 +1,42 @@
+# Development files
+.git/
+.gitignore
+.DS_Store
+*.log
+node_modules/
+
+# Test files
+test/
+coverage/
+
+# Development examples (keep only training data)
+examples/demo.js
+examples/usage.js
+*.tmp
+*.temp
+
+# Documentation source (keep compiled docs)
+docs/
+
+# Build artifacts
+build/
+dist/
+*.tgz
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary model files
+example_model.json
+*.model
+models/*.json
+
+# Scripts
+scripts/

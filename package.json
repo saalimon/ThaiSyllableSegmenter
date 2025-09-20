@@ -1,16 +1,40 @@
 {
-  "name": "thai-syllable-segmenter-crf",
+  "name": "@deduq/thai-syllable-segmenter-crf",
   "version": "1.0.0",
-  "description": "Thai syllable segmenter using Conditional Random Fields",
+  "description": "Thai syllable segmenter using Conditional Random Fields - A JavaScript implementation for segmenting Thai text into syllables using machine learning",
   "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "src/",
+    "types/",
+    "README.md",
+    "TUTORIAL.md",
+    "LICENSE",
+    "examples/training_data.json"
+  ],
   "scripts": {
     "start": "node src/index.js",
     "test": "node test/test.js",
     "train": "node src/train.js",
-    "demo": "node examples/demo.js"
+    "demo": "node examples/demo.js",
+    "prepublishOnly": "npm test",
+    "prepare": "node scripts/prepare.js"
   },
-  "keywords": ["thai", "syllable", "segmentation", "crf", "nlp"],
-  "author": "Your Name",
+  "keywords": [
+    "thai",
+    "syllable",
+    "segmentation",
+    "crf",
+    "nlp",
+    "natural-language-processing",
+    "thai-language",
+    "machine-learning",
+    "conditional-random-fields",
+    "text-processing",
+    "linguistics",
+    "phonetics"
+  ],
+  "author": "saalimon",
   "license": "MIT",
   "dependencies": {
     "ml-matrix": "^6.10.4",
@@ -18,5 +42,28 @@
   },
   "devDependencies": {
     "assert": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saalimon/ThaiSyllableSegmenter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saalimon/ThaiSyllableSegmenter/issues"
+  },
+  "homepage": "https://github.com/saalimon/ThaiSyllableSegmenter#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }

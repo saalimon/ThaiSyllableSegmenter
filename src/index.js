@@ -39,7 +39,7 @@ if (require.main === module) {
         console.log('Training the model...');
         try {
             await segmenter.train(trainingData);
-            console.log('Training completed!\\n');
+            console.log('Training completed!\n');
             
             // Test the segmenter
             const testTexts = [
