@@ -1,0 +1,22 @@
+{
+  "name": "thai-syllable-segmenter-crf",
+  "version": "1.0.0",
+  "description": "Thai syllable segmenter using Conditional Random Fields",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/test.js",
+    "train": "node src/train.js",
+    "demo": "node examples/demo.js"
+  },
+  "keywords": ["thai", "syllable", "segmentation", "crf", "nlp"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "ml-matrix": "^6.10.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0"
+  }
+}
