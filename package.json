@@ -1,6 +1,6 @@
 {
   "name": "@deduq/thai-syllable-segmenter-crf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thai syllable segmenter using Conditional Random Fields - A JavaScript implementation for segmenting Thai text into syllables using machine learning",
   "main": "src/index.js",
   "types": "types/index.d.ts",
